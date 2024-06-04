@@ -45,7 +45,7 @@ first download the code base by cloning this repo
 
 ``` 
 cd ~/Downloads
-git clone https://github.com/adianliusie/voting
+git clone https://github.com/adianliusie/usa_today_bot_2024
 ```
 
 Then move the `run` file to be easily accessible from the home directory
