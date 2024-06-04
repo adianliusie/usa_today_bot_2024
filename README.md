@@ -50,7 +50,7 @@ git clone https://github.com/adianliusie/usa_today_bot_2024
 
 Then move the `run` file to be easily accessible from the home directory
 ``` 
-mv voting/run ~
+mv usa_today_bot_2024/run ~
 ```
 
 Then try running the script
