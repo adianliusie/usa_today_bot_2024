@@ -26,17 +26,30 @@ pip install numpy
 
 ### Downloading chromedriver
 
-Download the [chromedriver](https://googlechromelabs.github.io/chrome-for-testing/#stable) used by selenium. Again, ensure the compatible version is used. 
 
-For Mac M1, use the following [link](https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.26/mac-arm64/chrome-mac-arm64.zip)
-For older macs, use the following [link](https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.26/mac-x64/chrome-mac-x64.zip)
-test
+The [chromedriver](https://googlechromelabs.github.io/chrome-for-testing/#stable) is used by selenium to control the bot. 
+
+#### New Macs with M1 Chips
+For Mac with new chips (M1-M3), use the following [link](https://storage.googleapis.com/chrome-for-testing-public/125.0.6422.141/mac-arm64/chromedriver-mac-arm64.zip)
+
+The when the file is downloaded, open the .zip file on finder to unzip the file, then open terminal and run the following command 
+OB
+
+```
+cd ~/Downloads
+sudo mv chromedriver-mac-arm64/chromedriver /usr/local/bin
+```
+
+you will have to type the password on terminal (note characters won't show, but click enter when done anyways)
+
+#### (Aternative) Old intel-based macs 
+For older macs, use the following [link](https://storage.googleapis.com/chrome-for-testing-public/125.0.6422.141/mac-x64/chromedriver-mac-x64.zip)
 
 When the file is downloaded, open the .zip file on finder to unzip the file, then open terminal and run the following command
 
 ```
 cd ~/Downloads
-sudo mv chromedriver /usr/local/bin 
+sudo mv chromedriver-mac-x64/chromedriver /usr/local/bin 
 ```
 
 you will have to type the password on terminal (note characters won't show, but click enter when done anyways)
