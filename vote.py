@@ -31,7 +31,7 @@ def vote_script():
     while count < 250:
         try:
            vote()
-        except as e:
+        except Exception as e:
            print(e)
            time.sleep(2)
         count = count+1
