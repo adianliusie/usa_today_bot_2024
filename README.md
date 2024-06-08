@@ -30,6 +30,7 @@ Download the [chromedriver](https://googlechromelabs.github.io/chrome-for-testin
 
 For Mac M1, use the following [link](https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.26/mac-arm64/chrome-mac-arm64.zip)
 For older macs, use the following [link](https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.26/mac-x64/chrome-mac-x64.zip)
+test
 
 When the file is downloaded, open the .zip file on finder to unzip the file, then open terminal and run the following command
 
