@@ -23,12 +23,12 @@ def vote():
 
     time.sleep(1)
     driver.find_element_by_id("awardVoteButton").click()
-    time.sleep(2)
+    time.sleep(5)
     driver.quit()
     
 def vote_script():
     count = 0
-    while count < 250:
+    while count < 100:
         try:
            vote()
         except Exception as e:
