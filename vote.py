@@ -24,13 +24,25 @@ def vote():
     time.sleep(1)
     driver.find_element_by_id("awardVoteButton").click()
     time.sleep(5)
+
+    x = driver.find_elements_by_class_name("error")
+    if x:
+        print(x)
+        time.sleep(1)
+        return 0
+
     driver.quit()
-    
+    return 1
+
 def vote_script():
     count = 0
-    while count < 100:
+    while count < 1000:
         try:
-           vote()
+            success = vote()
+            if not success:
+                print("ip limit reached")
+                break
+
         except Exception as e:
            print(e)
            time.sleep(2)
