@@ -20,7 +20,7 @@ If chrome is not already installed on the computer, download [chrome](https://ww
 A few python packages are necessary. Run the following 2 lines in terminal to get relevant dependencies:
 
 ```
-pip install selenium==3.9
+pip install selenium==4.22.0
 pip install numpy
 ```
 
@@ -30,10 +30,10 @@ pip install numpy
 The [chromedriver](https://googlechromelabs.github.io/chrome-for-testing/#stable) is used by selenium to control the bot. 
 
 #### New Macs with M1 Chips
-For Mac with new chips (M1-M3), use the following [link](https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.61/mac-arm64/chromedriver-mac-arm64.zip)
+For Mac with new chips (M1-M3), use the following [link](https://storage.googleapis.com/chrome-for-testing-public/137.0.7151.68/mac-arm64/chromedriver-mac-arm64.zip)
 
 The when the file is downloaded, open the .zip file on finder to unzip the file, then open terminal and run the following command 
-OB
+
 
 ```
 cd ~/Downloads
@@ -73,7 +73,7 @@ cd ~
 bash run
 ```
 
-This won't work due to security preferences. Open System Preference > Security & Privacy > General, and then allow using the chromedriver
+This won't work due to security preferences. Open System Preference > Security & Privacy > General, and then allow using the chromedriver.
 
 Script should now work if on terminal you type ```bash run```!
 
