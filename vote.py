@@ -14,7 +14,8 @@ from selenium.webdriver.support.ui import Select
 def vote():
     driver = webdriver.Chrome()
     # driver.get('https://www.10best.com/awards/travel/best-wellness-retreat/eupepsia-bland-va/');
-    driver.get("https://bit.ly/458INKO")
+    # driver.get("https://bit.ly/458INKO")
+    driver.get("https://10best.usatoday.com/awards/eupepsia-wellness-resort-bland-virginia/")
     time.sleep(2)
 
     try:
@@ -28,10 +29,10 @@ def vote():
     time.sleep(1)
 
     driver.find_element(By.XPATH, "//button[text()='Vote Now']").click()
-    time.sleep(3)
+    time.sleep(5)
 
     try:
-        x = driver.find_elements(By.CLASS_NAME, "error")
+        x = driver.find_elements(By.CLASS_NAME, "rBk76F47OVo-")
         if x:
             print(x)
             time.sleep(1)
@@ -51,12 +52,12 @@ def vote_script():
             if not success:
                 print("ip limit reached")
                 break
+            count = count + 1
+            print(count)
 
         except Exception as e:
             print(e)
             time.sleep(2)
-        count = count + 1
-        print(count)
 
 
 vote_script()
